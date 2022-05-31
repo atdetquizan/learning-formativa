@@ -1,0 +1,28 @@
+
+.card-student {
+    border-radius: 4px;
+    border       : 1px solid #eee;
+    list-style   : none;
+    margin-bottom: 15px;
+    max-width    : 100%;
+    padding      : 8px 32px;
+    text-align   : center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.card-student-image {
+    padding-right: 10px;
+}
+.card-student-info {
+    text-align: left;
+}
+.card-student-info h4 {
+    margin-bottom: 0px;
+}
+.card-student img {
+    border-radius: 100%;
+    height       : auto;
+    width        : 50px;
+}

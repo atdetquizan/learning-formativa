@@ -1,6 +1,6 @@
 import './CardCourse.css';
 import { ICourses } from "../../../core";
-import CourseStatus from '../CourseStatus/CourseStatus';
+import CardStatus from '../CourseStatus/CourseStatus';
 import CardCategory from '../CardCategory/CardCategory';
 
 function CardCourse({ avatar, name, description = 'Sin informaciòn', status, category }: ICourses) {
@@ -9,7 +9,7 @@ function CardCourse({ avatar, name, description = 'Sin informaciòn', status, ca
     <h4>{name}</h4>
     <p>{description?.toUpperCase()}</p>
     <CardCategory category={category}></CardCategory>
-    <CourseStatus status={status}></CourseStatus>
+    <CardStatus status={status}></CardStatus>
   </li>
 }
 
