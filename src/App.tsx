@@ -1,52 +1,25 @@
-import React, { useState } from "react";
 import "./App.css";
-import { ICourses } from "./core";
-import Footer from "./footer";
-import CardCourse from "./shared/components/CardCourse/CardCourse";
+import FooterSection from "./shared/components/FooterSection/FooterSection";
+import Header from "./shared/components/Header/Header";
+import ListCourses from "./shared/components/ListCourses/ListCourse";
+import ListStudent from "./shared/components/ListStudent/ListStudent";
 
 function App() {
-  const [courses, setCourses] = useState<ICourses[]>([
-    {
-      name: "ReactJS",
-      precio: 30,
-      avatar: "https://i.pravatar.cc/150?u=react",
-      description: "Curso de desarrollo Front-End",
-      status: false,
-      // category: CategoryType.FRONTEND
-    },
-    {
-      name: "VueJS",
-      precio: 30,
-      avatar: "https://i.pravatar.cc/150?u=vuejs",
-      description: "Curso de desarrollo Front-End",
-      status: true,
-      // category: CategoryType.FRONTEND
-    },
-    {
-      name: "Angular",
-      precio: 30,
-      avatar: "https://i.pravatar.cc/150?u=angular",
-      status: false,
-      // category: CategoryType.FRONTEND
-    },
-    {
-      name: "PHP",
-      precio: 30,
-      avatar: "https://i.pravatar.cc/150?u=php",
-      status: false,
-      // category: CategoryType.BACKEND
-    },
-  ]);
+  // const [courses, setCourses] = useState<ICourses[]>(CoursesList);
   return (
     <div className="App">
-      <header className="App-header">
-        <ul>
-          {courses.map((value, index) => (
-           <CardCourse  value={value} position={index} />
-          ))}
-        </ul>
-      </header>
-      <Footer></Footer>
+      <Header></Header>
+      <div className="container mt-5">
+        <div className="row">
+          <div className="col-md-6">
+            <ListCourses></ListCourses>
+          </div>
+          <div className="col-md-6">
+            <ListStudent></ListStudent>
+          </div>
+        </div>
+      </div>
+      <FooterSection></FooterSection>
     </div>
   );
 }

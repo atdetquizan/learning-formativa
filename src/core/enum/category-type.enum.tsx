@@ -1,4 +1,6 @@
-export enum CategoryType {
-    FRONTEND = 'FRONT_END',
-    BACKEND = 'BACK_END'
+enum CategoryType {
+    FRONT_END = 'FRONT_END',
+    BACK_END = 'BACK_END'
 }
+
+export default CategoryType;

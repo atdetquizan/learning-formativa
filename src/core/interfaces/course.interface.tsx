@@ -1,10 +1,10 @@
-// import { CategoryType } from "../enum/category-type.enum"
+import CategoryType from "../enum/category-type.enum";
 
 export interface ICourses {
   name: string
   precio: number
   avatar: string
   status: boolean
-//   category: CategoryType;
+  category: CategoryType;
   description?: string
 }
