@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { ICourses } from "./core";
 import Footer from "./footer";
+import CardCourse from "./shared/components/CardCourse/CardCourse";
 
 function App() {
   const [courses, setCourses] = useState<ICourses[]>([
@@ -40,12 +41,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <ul>
-          {courses.map((value) => (
-            <li>
-              <img src={value.avatar} alt="" />
-              <h4>{value.name}</h4>
-              <p>{value.description?.toUpperCase()}</p>
-            </li>
+          {courses.map((value, index) => (
+           <CardCourse  value={value} position={index} />
           ))}
         </ul>
       </header>

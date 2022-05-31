@@ -1,0 +1,21 @@
+.course-status-active {
+    background-color: green;
+    height: 10px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 100%;
+}
+
+.course-status-inactive {
+    background-color: red;
+    height: 10px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 100%;
+}
