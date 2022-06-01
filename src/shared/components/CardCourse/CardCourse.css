@@ -10,6 +10,9 @@
     position: relative;
 }
 
+.card-course-red {
+    background-color: red;
+}
 
 .card-course img {
     border-radius: 100%;

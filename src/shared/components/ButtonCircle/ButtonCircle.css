@@ -1,0 +1,17 @@
+.container-buttom button {
+    border-width      : 0px;
+    width             : 50px;
+    height            : 50px;
+    background-color  : rgb(203, 203, 203);
+    border-radius     : 100%;
+    -webkit-box-shadow: -2px 2px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow   : -2px 2px 32px -8px rgba(0, 0, 0, 0.75);
+    box-shadow        : -2px 2px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.container-buttom button:active {
+
+    -webkit-box-shadow: -2px 2px 32px -8px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow   : -2px 2px 32px -8px rgba(0, 0, 0, 0.4);
+    box-shadow        : -2px 2px 32px -8px rgba(0, 0, 0, 0.5);
+}
