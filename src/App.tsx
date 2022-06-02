@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { Course } from "./features/courses/course";
 import Counter from "./shared/components/Counter/Counter";
 import FooterSection from "./shared/components/FooterSection/FooterSection";
 import Header from "./shared/components/Header/Header";
@@ -15,8 +16,11 @@ class App extends React.Component {
         <div className="container mt-5">
           <div className="row justify-content-md-center">
             <div className="col-md-3">
-              <Counter></Counter>
+              <Course></Course>
             </div>
+            {/* <div className="col-md-3">
+              <Counter></Counter>
+            </div> */}
             {/* <div className="col-md-6">
               <ListCourses></ListCourses>
             </div>

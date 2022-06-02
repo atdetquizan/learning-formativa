@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useState } from "react";
 
-interface ReturnType {
+export interface ReturnType {
     count: number;
     increment: () => void;
     decrement: () => void;
