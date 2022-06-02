@@ -14,15 +14,15 @@ class App extends React.Component {
         <Header></Header>
         <div className="container mt-5">
           <div className="row justify-content-md-center">
-            {/* <div className="col-md-3"> */}
-              {/* <Counter></Counter> */}
-            {/* </div> */}
-            <div className="col-md-6">
+            <div className="col-md-3">
+              <Counter></Counter>
+            </div>
+            {/* <div className="col-md-6">
               <ListCourses></ListCourses>
             </div>
             <div className="col-md-6">
               <ListStudent></ListStudent>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* <FooterSection></FooterSection> */}
